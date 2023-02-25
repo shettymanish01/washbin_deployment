@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: washbin-service
+  name: washbin-service-dev
 spec:
   type: NodePort
   selector:
