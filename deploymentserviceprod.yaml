@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: washbin-site-prod
+  namespace: prod
   labels:
     app: washbinsite-prod
 spec:
@@ -27,6 +28,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: washbin-service-prod
+  namespace: prod
 spec:
   type: NodePort
   selector:
